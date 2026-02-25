@@ -9,11 +9,11 @@ import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
-
+        enableEdgeToEdge()
         setContent {
-            App()
+            // Yahan hum ne App() ki jagah MainApp() kar diya hai
+            MainApp()
         }
     }
 }
@@ -21,5 +21,5 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    App()
+    MainApp() // Preview ke liye bhi theek kar diya
 }
