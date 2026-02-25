@@ -1,0 +1,19 @@
+import kotlin.Boolean;
+
+CREATE TABLE SnowJobEntity (
+    jobId TEXT NOT NULL PRIMARY KEY,
+    address TEXT NOT NULL,
+    status TEXT NOT NULL,
+    clientName TEXT NOT NULL,
+    isSynced INTEGER AS Boolean DEFAULT 0
+);
+
+insertJob:
+INSERT OR REPLACE INTO SnowJobEntity(jobId, address, status, clientName, isSynced)
+VALUES (?, ?, ?, ?, ?);
+
+getAllJobs:
+SELECT * FROM SnowJobEntity;
+
+getUnsyncedJobs:
+SELECT * FROM SnowJobEntity WHERE isSynced = 0;

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080398559891",
+    "project_id": "geosnowservices",
+    "storage_bucket": "geosnowservices.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080398559891:android:7e4a67fdef4417a287eb66",
+        "android_client_info": {
+          "package_name": "org.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0l_ttr4DxmBCphFYrDJrq4oIs8t_HQ6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
